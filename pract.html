@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+        
+    </head>
+<body>
+
+<button onclick="mine()">click me</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+</body>
+<script>
+/*var name1, name2;
+name1=prompt(); name2=prompt();
+alert(name1+" "+name2);*/
+/*var x=myFunction(4,5);
+function myFunction(a,b){
+    return(a+b);*/
+    /*function toCelcious(f) {
+        return (5/9)*(f-32);
+    }
+alert(toCelcious(9));*/
+/*function displayDate(){
+    document.getElementById("demo").innerHTML=Date();*/
+
+/*var str = "Please locate where 'locate' occurs!";
+var pos = str[8];
+document.getElementById("demo").innerHTML = pos;*/
+/*var n=2;
+var text="";
+while(n!=Infinity){
+    n*=n;
+    text+=n + "<br>"
+}*/
+//document.getElementById("demo").innerHTML = text;
+var cars=[{type: "volvo", year:2002},{type: "benz", year:2001},{type: "audi", year:2003}];
+carsDisplay();
+
+function mine(){cars.sort(function(a,b){return (a.year-b.year)}) ;
+carsDisplay();};
+function carsDisplay(){document.getElementById("demo2").innerHTML=
+cars[0].type +" "+ cars[0].year +"<br>"+
+cars[1].type +" "+ cars[1].year +"<br>"+
+cars[2].type +" "+ cars[2].year ;
+};
+
+</script>
+
+</html> 
